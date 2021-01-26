@@ -1,0 +1,57 @@
+.container {
+        background-color: white;
+        height: 23.375rem;
+        width: 20.375rem;
+        margin: 9.25rem auto;
+        border-radius: 1rem;
+
+        @include breakpoint-up(large) {
+            height: 22.875rem;
+            width: 21.3125rem;
+        }
+
+    &__header {
+        background-image: url(/images/bg-pattern-card.svg);
+        height: 8.8125rem;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    &__image {
+        background-image: url(/images/image-victor.jpg);
+        height: 5.8125rem;
+        width: 5.8125rem;
+        background-repeat: no-repeat;
+        position: fixed;
+        transform: translate(100%, -50%);
+        border-radius: 50%;
+        border: 0.5rem solid white;
+
+        @include breakpoint-up(large){
+            transform: translate(110%, -50%);
+        }
+    }
+
+    &__user {
+        margin-top: 4.25rem;
+    }
+
+    &__social {
+        height: 5.25rem;
+        border-top: 0.1rem solid hsla(0, 0%, 59%, 0.2);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__item {
+        > h2 {
+            margin: 0;
+        }
+
+        > p {
+            margin: 0;
+            margin-top: .4rem;
+            font-size: 0.75rem;
+        }
+    }
+}
